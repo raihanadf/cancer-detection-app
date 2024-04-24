@@ -5,3 +5,17 @@ m
 =app/src/main/java/com/dicoding/asclepius/view/MainActivity.kt,3/c/3cee14c49590ec8c315c4329ea0449249426ace2
 o
 ?app/src/main/java/com/dicoding/asclepius/view/ResultActivity.kt,c/5/c58123804d838ce31671dbdfc72dd2fb2974ef44
+D
+app/build.gradle.kts,d/2/d2a4383452aad84a18429a5844d31330a012a9e6
+F
+app/proguard-rules.pro,9/e/9e08934d811afe28fbc77aaa3c0d747b94348db9
+@
+build.gradle.kts,d/b/dbcff70658daf80b53ce624f6adcaa529df5ed8d
+C
+settings.gradle.kts,7/4/749edfcc96398253e5b3416184e95c46621da850
+P
+ app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
+m
+=app/src/main/java/com/dicoding/asclepius/view/NewsActivity.kt,a/8/a898e03733433d4ec3038921831624472354ae87
+p
+@app/src/main/java/com/dicoding/asclepius/view/HistoryActivity.kt,7/e/7e1523cbd94c2e52e241b7e21706950702ce8cab
