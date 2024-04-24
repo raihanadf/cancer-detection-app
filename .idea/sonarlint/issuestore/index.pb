@@ -19,3 +19,13 @@ m
 =app/src/main/java/com/dicoding/asclepius/view/NewsActivity.kt,a/8/a898e03733433d4ec3038921831624472354ae87
 p
 @app/src/main/java/com/dicoding/asclepius/view/HistoryActivity.kt,7/e/7e1523cbd94c2e52e241b7e21706950702ce8cab
+t
+Dapp/src/main/java/com/dicoding/asclepius/data/adapter/NewsAdapter.kt,9/4/94c9a2dde1ce71ddc25191f46aaa495b151ac765
+k
+;app/src/main/java/com/dicoding/asclepius/data/model/News.kt,3/4/3464451135b5735a0d634aecfb6a70afc2b4e4b7
+r
+Bapp/src/main/java/com/dicoding/asclepius/data/network/ApiConfig.kt,f/f/ffffd524ceefc939a08b48c7b536dd765b928997
+w
+Gapp/src/main/java/com/dicoding/asclepius/data/network/ApiNewsService.kt,b/5/b5e104394ba6de691b9d09d53e6382531b7b37c3
+s
+Capp/src/main/java/com/dicoding/asclepius/viewmodel/NewsViewModel.kt,d/3/d37346101c904b602c256037305b1a7a714274ec

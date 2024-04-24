@@ -10,4 +10,6 @@
     <string name="empty_image_warning">Please pick a picture first.</string>
     <string name="history">History</string>
     <string name="news">News</string>
+    <string name="placeholder_name">Name\n</string>
+    <string name="placeholder_desc">description</string>
 </resources>
