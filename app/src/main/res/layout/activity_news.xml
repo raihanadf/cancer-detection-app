@@ -10,7 +10,8 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:backgroundTint="?colorOnPrimary">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/topAppBar"
@@ -52,7 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:backgroundTint="#608960"
+        android:backgroundTint="@color/green"
         app:hideOnScroll="true"
         app:menu="@menu/bottom_app_menu" />
 
@@ -60,10 +61,9 @@
         android:id="@+id/btn_scan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#3E6D35"
         app:layout_anchor="@id/bottomAppBar"
         app:srcCompat="@drawable/ic_scan"
-        android:backgroundTint="#3E6D35"
-        app:tint="?colorOnPrimary"
-        />
+        app:tint="?colorOnPrimary" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
