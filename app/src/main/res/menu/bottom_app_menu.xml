@@ -5,5 +5,5 @@
         android:id="@+id/menu_history"
         app:showAsAction="always"
         android:icon="@drawable/ic_history"
-        android:title="Grid View Toggle" />
+        android:title="@string/history" />
 </menu>
