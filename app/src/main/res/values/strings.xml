@@ -12,4 +12,5 @@
     <string name="news">News</string>
     <string name="placeholder_name">Name\n</string>
     <string name="placeholder_desc">description</string>
+    <string name="scan_button">Scan Button</string>
 </resources>
