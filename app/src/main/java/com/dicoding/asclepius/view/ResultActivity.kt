@@ -3,6 +3,7 @@ package com.dicoding.asclepius.view
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -59,12 +60,17 @@ class ResultActivity : AppCompatActivity() {
                 confidenceScore = confidenceScore
             )
             resultViewModel.insert(history)
+            showToast("Saved!")
         }
     }
 
     private fun obtainViewModel(): ResultViewModel {
         val factory = ViewModelFactory.getAppInstance(application)
         return ViewModelProvider(this, factory)[ResultViewModel::class.java]
+    }
+
+    private fun showToast(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 
 }
