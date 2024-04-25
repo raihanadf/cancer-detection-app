@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-kapt")
 }
 
 android {
@@ -34,7 +35,7 @@ android {
             buildConfigField(
                 "String",
                 "API_KEY",
-                "\"\""
+                "\"663941d135444ae8a9a492f1eeda3747\""
             )
         }
         release {
@@ -45,7 +46,7 @@ android {
             )
             buildConfigField(
                 "String", "API_KEY",
-                "\"\""
+                "\"663941d135444ae8a9a492f1eeda3747\""
             )
             release {
                 isMinifyEnabled = false
@@ -67,7 +68,6 @@ android {
     }
 
     dependencies {
-
         implementation("androidx.core:core-ktx:1.12.0")
         implementation("androidx.appcompat:appcompat:1.6.1")
         implementation("com.google.android.material:material:1.11.0")
@@ -96,5 +96,12 @@ android {
         implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
         implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
         implementation("androidx.fragment:fragment-ktx:1.6.2")
+
+        // [[ room ]]
+        val room_version = "2.6.1"
+        implementation("androidx.room:room-ktx:2.6.1")
+        implementation("androidx.room:room-runtime:$room_version")
+        kapt("androidx.room:room-compiler:$room_version")
+
     }
 }

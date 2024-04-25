@@ -29,3 +29,17 @@ w
 Gapp/src/main/java/com/dicoding/asclepius/data/network/ApiNewsService.kt,b/5/b5e104394ba6de691b9d09d53e6382531b7b37c3
 s
 Capp/src/main/java/com/dicoding/asclepius/viewmodel/NewsViewModel.kt,d/3/d37346101c904b602c256037305b1a7a714274ec
+z
+Japp/src/main/java/com/dicoding/asclepius/data/local/CancerHistoryEntity.kt,7/4/7476bdccaebc3118c1b7ba656a8145da56f734e7
+t
+Dapp/src/main/java/com/dicoding/asclepius/factory/ViewModelFactory.kt,b/9/b928a99801af2e104a0b8b9c8475ab55476fc7e7
+u
+Eapp/src/main/java/com/dicoding/asclepius/viewmodel/ResultViewModel.kt,8/2/820d4e89b270e318abc95b18cd791cc0193fd3c9
+w
+Gapp/src/main/java/com/dicoding/asclepius/data/local/CancerHistoryDAO.kt,a/5/a5f73a6f884bdf94cf95942fb69e7343a79430b2
+v
+Fapp/src/main/java/com/dicoding/asclepius/viewmodel/HistoryViewModel.kt,f/6/f69aff16181787c966f2268895ebfc3c4f1bf36e
+|
+Lapp/src/main/java/com/dicoding/asclepius/data/local/CancerHistoryDatabase.kt,6/c/6cf5729ad5a7bf1e459f2935eecf530f29855050
+x
+Happ/src/main/java/com/dicoding/asclepius/repository/HistoryRepository.kt,8/9/898ad182fbcff215a780c49066efb3a77ce585a1

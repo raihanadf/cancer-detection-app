@@ -6,8 +6,13 @@ import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.ViewModelProvider
 import com.dicoding.asclepius.R
+import com.dicoding.asclepius.data.local.CancerHistoryEntity
 import com.dicoding.asclepius.databinding.ActivityResultBinding
+import com.dicoding.asclepius.factory.ViewModelFactory
+import com.dicoding.asclepius.viewmodel.ResultViewModel
+import java.util.UUID
 
 class ResultActivity : AppCompatActivity() {
 
@@ -23,6 +28,8 @@ class ResultActivity : AppCompatActivity() {
     private lateinit var prediction: String
     private var confidenceScore: Float = 0f
 
+    private lateinit var resultViewModel: ResultViewModel
+
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityResultBinding.inflate(layoutInflater)
         enableEdgeToEdge()
@@ -34,16 +41,30 @@ class ResultActivity : AppCompatActivity() {
             insets
         }
 
+        resultViewModel = obtainViewModel()
+
         // TODO: Menampilkan hasil gambar, prediksi, dan confidence score.
         currentImageUri = Uri.parse(intent.getStringExtra(EXTRA_IMAGE_URI))
         prediction = intent.getStringExtra(EXTRA_PREDICTION) ?: ""
         confidenceScore = intent.getFloatExtra(EXTRA_CONFIDENCE, 0f)
+        val resultText = getString(R.string.result_text, prediction, confidenceScore)
 
         binding.resultImage.setImageURI(currentImageUri)
-
-        val resultText = getString(R.string.result_text, prediction, confidenceScore)
         binding.resultText.text = resultText
+
+        binding.floatingActionButton.setOnClickListener {
+            val history = CancerHistoryEntity(
+                imageUri = currentImageUri.toString(),
+                prediction = prediction,
+                confidenceScore = confidenceScore
+            )
+            resultViewModel.insert(history)
+        }
     }
 
+    private fun obtainViewModel(): ResultViewModel {
+        val factory = ViewModelFactory.getAppInstance(application)
+        return ViewModelProvider(this, factory)[ResultViewModel::class.java]
+    }
 
 }
