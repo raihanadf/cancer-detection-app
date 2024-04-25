@@ -24,7 +24,11 @@ class HistoryViewModel(mApplication: Application) : ViewModel() {
         viewModelScope.launch {
             val result = mHistoryRepository.getAllHistory()
             _histories.value = result
-            Log.d(TAG, "getAllHistory: $history")
+            Log.d(TAG, "getAllHistory: ${history.value}")
         }
+    }
+
+    init {
+        getAllHistory()
     }
 }

@@ -7,7 +7,7 @@ import androidx.room.Query
 
 @Dao
 interface CancerHistoryDAO {
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    @Insert
     suspend fun insert(cHistory: CancerHistoryEntity)
 
     @Query("select * from cancer_history")

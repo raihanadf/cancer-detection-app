@@ -6,7 +6,8 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "cancer_history")
 data class CancerHistoryEntity(
-    @PrimaryKey(autoGenerate = false)
+    @PrimaryKey(autoGenerate = true)
+    val id: Int = 0,
     @ColumnInfo(name = "imageUri")
     val imageUri: String,
     @ColumnInfo(name = "prediction")

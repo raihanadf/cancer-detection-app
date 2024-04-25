@@ -43,3 +43,5 @@ Fapp/src/main/java/com/dicoding/asclepius/viewmodel/HistoryViewModel.kt,f/6/f69
 Lapp/src/main/java/com/dicoding/asclepius/data/local/CancerHistoryDatabase.kt,6/c/6cf5729ad5a7bf1e459f2935eecf530f29855050
 x
 Happ/src/main/java/com/dicoding/asclepius/repository/HistoryRepository.kt,8/9/898ad182fbcff215a780c49066efb3a77ce585a1
+w
+Gapp/src/main/java/com/dicoding/asclepius/data/adapter/HistoryAdapter.kt,b/5/b5f959bb729ba1aab284e480374dc6325561fe6f
